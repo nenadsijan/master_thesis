@@ -1,0 +1,346 @@
+
+  body {
+
+/*background: url(/images/images.jpeg) no-repeat center center fixed; */
+    background: #f0f0f0; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+  .container {
+            max-width: 940px;
+        }
+#header{
+	height: 120px;
+	background-color: #007ab3;
+	padding: 20px;
+	padding-left: 100px;
+
+
+}
+
+.navbar {
+    position: relative;
+    min-height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid transparent; 
+    z-index: 1;
+    border-radius: 0;
+}
+
+.navbar-inverse{
+
+  background-color: #004666;
+}
+
+@media (min-width: 768px){
+  #navbar{
+  position: sticky;
+}
+  .navbar {
+    position: relative;
+    min-height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid transparent; 
+    z-index: 1;
+    border-radius: 0;
+}
+
+.navbar-inverse{
+
+  background-color: #004666;
+}
+.navbar-nav>li>a {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+}}
+.navbar-nav>li>a {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+}
+.nav>li>a {
+    padding: 0px;
+    padding-left: 10px;
+    padding-right:10px;
+    color: white;
+    padding-top: 3px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+
+}
+
+.tablica{
+
+    float:left;
+}
+table{
+  text-align: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+th{
+  text-align: center;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 5px 5px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    background-color: #004666;
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    float: none;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    color: #fff;
+    background-color: #007ab3;
+
+
+}
+
+@media (max-width: 767px){
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: white;
+  }
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+footer{
+
+ bottom:0;
+ left:0;
+ width: 100%;
+}
+
+ @media
+    only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: #ccc;
+    }
+    
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      text-align: right;
+      padding-left: 50%;
+    }
+
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      text-align: left;
+      /* Top/left values mimic padding */
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+  }
+
+   /* Pagination*/
+
+    .pg-normal{
+
+    background-color: #fff;
+    color: #428bca;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0px;
+    border-radius: 4;
+    border-radius: 3px;
+
+    }
+    .pg-selected{
+    background-color: #428bca;
+    color: white;
+    border: 1px solid #fff;
+    float: left;
+    padding: 8px 16px;
+    margin: 0px;
+
+    }
+
+.pg-normal:hover:not(.active) {background-color: #ddd; color: #428bca;}
+
+
+.jumbotron{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*
+ * General styles
+ */
+
+.card-container.card {
+    max-width: 550px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    border-radius: 0px;
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.form-error {
+
+border-color: red;
+}
+
+
+.forgot-password {
+    color: rgb(104, 145, 162);
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: rgb(12, 97, 33);
+}
+
+.card-container{
+background-color: white;
+}
+
+
+
+
+.pagination {
+  width: 75%;
+  margin: 1em auto;
+  
+  
+  &:after {
+    content: '';
+    clear: both;
+  }
+}
+/*Chart pagination*/
+.pagination-button {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #e0e0e0;  
+  background-color: white;
+  color: #428bca;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+    }
+  .pagination-button:hover {
+     background-color: #428bca;
+    color: white;
+  }
+  
+  .pagination-button.active {
+   background-color: #428bca;
+    color: white;
+    border-color: #bbb;
+  }
+  
+  
